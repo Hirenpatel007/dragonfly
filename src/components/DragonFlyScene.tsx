@@ -69,8 +69,8 @@ function GalacticBackground() {
 
 export default function DragonFlyScene({ showStars = true }: { showStars?: boolean }) {
   return (
-    <div className="w-full h-screen">
-      <Canvas gl={{ antialias: true, alpha: false }}>
+    <div className="fixed inset-0 w-screen h-screen overflow-hidden">
+      <Canvas gl={{ antialias: true, alpha: false }} style={{ width: '100vw', height: '100vh' }}>
         <PerspectiveCamera makeDefault position={[0, 5, 25]} fov={75} />
         <OrbitControls 
           enablePan={true} 

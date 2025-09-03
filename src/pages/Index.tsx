@@ -49,7 +49,7 @@ export default function Index() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
+    <div className="fixed inset-0 w-screen h-screen bg-black overflow-hidden">
       {showUI && (
         <div className="absolute top-4 left-4 z-10 transition-opacity duration-300">
           <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 dragonfly-glow animate-pulse">
